@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gi gave</title>
 
     <style>
-        input {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width: 40%;
-              text-align: left;
-              padding: 12px 20px;
-              margin: 8px 0;
-            }
+      input {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 40%;
+        text-align: left;
+        padding: 12px 20px;
+        margin: 8px 0;
+      }
 
-        #submit {
-            text-align: center;
-            margin: auto;
-        }
+      #submit {
+        text-align: center;
+        margin: auto;
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
     <h1>Støtt oss ved å gi gave</h1>
 
-    <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
-        Navn og etternavn: <br> <input id="navn" type="text" name="navn" pattern="[A-Za-z* ]+[A-Za-z*]" required> <br>
-        Postnummer: <br> <input id="postnummer" type="number" name="postnummer" required> <br>
-        Adresse: <br> <input id="adresse" type="text" name="adresse" required> <br>
-        Fax: <br> <input id="fax" type="number" name="fax" required> <br>
+    <form
+      action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php"
+      method="post"
+    >
+      Navn og etternavn: <br />
+      <input
+        id="navn"
+        type="text"
+        name="navn"
+        pattern="[A-Za-z* ]+[A-Za-z*]"
+        required
+      />
+      <br />
+      Postnummer: <br />
+      <input id="postnummer" type="number" name="postnummer" required /> <br />
+      Adresse: <br />
+      <input id="adresse" type="text" name="adresse" required /> <br />
+      Fax: <br />
+      <input id="fax" type="number" name="fax" required /> <br />
 
-        Legge til merch? Velg så mye du vil! <br> Obs Obs, prisen blir lagt til i donasjonsbeløpet<input  id="kopp" type="checkbox" name="kopp"> <br>
-        <input  id="caps" type="checkbox" name="caps"> <br>
-        <input  id="t-skjorte" type="checkbox" name="t-skjorte"> <br>
-        <input  id="rakett-lauch" type="checkbox" name="rakett-lauch"> <br> 
+      Legge til merch? Velg så mye du vil! <br />
+      Obs Obs, prisen blir lagt til i donasjonsbeløpet<input
+        id="kopp"
+        type="checkbox"
+        name="kopp"
+      />
+      <br />
+      <input id="caps" type="checkbox" name="caps" /> <br />
+      <input id="t-skjorte" type="checkbox" name="t-skjorte" /> <br />
+      <input id="rakett-lauch" type="checkbox" name="rakett-lauch" /> <br />
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        Donasjon: <br> <input id="donasjon" type="number" name="donasjon" required> <br>
-    
-        <input id="submit" type="submit" value="Doner :D">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      Donasjon: <br />
+      <input id="donasjon" type="number" name="donasjon" required /> <br />
+
+      <input id="submit" type="submit" value="Doner :D" />
     </form>
-
-</body>
+    <script src="script/script.js"></script>
+  </body>
 </html>
